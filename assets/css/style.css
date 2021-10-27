@@ -31,3 +31,7 @@ body, html {
 #film-image {
     color: rgba(255, 255, 255, 0.808);
 }
+
+#title-undertext {
+    font-family: 'Righteous', sans-serif;
+}
