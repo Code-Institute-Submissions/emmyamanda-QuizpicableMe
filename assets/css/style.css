@@ -22,6 +22,7 @@ body, html {
     color: rgba(88, 106, 128, 0.945);
     font-size: 100px;
     text-transform: uppercase;
+    margin-top: 110px;
 }
 
 #title span {
@@ -34,4 +35,13 @@ body, html {
 
 #title-undertext {
     font-family: 'Righteous', sans-serif;
+}
+
+#play-button {
+    color: white;
+    background-color: rgb(34, 55, 102);
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 70px;
+    text-transform: uppercase;
 }
