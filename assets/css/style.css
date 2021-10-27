@@ -1,5 +1,5 @@
 /*-----------------Imported Fonts---------------*/
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rampart+One&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Righteous&family=Roboto+Condensed&display=swap');
 
 body, html {
     width: 100%;
@@ -15,4 +15,15 @@ body, html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#title {
+    font-family: 'Righteous', sans-serif;
+    color: rgb(19, 88, 116);
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+#title span {
+    background-color: rgba(250, 247, 246, 0.233);
 }
