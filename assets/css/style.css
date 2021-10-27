@@ -19,7 +19,7 @@ body, html {
 
 #title {
     font-family: 'Righteous', sans-serif;
-    color: rgb(19, 88, 116);
+    color: rgba(88, 106, 128, 0.945);
     font-size: 100px;
     text-transform: uppercase;
 }
