@@ -44,4 +44,32 @@ body, html {
     font-family: 'Roboto Condensed', sans-serif;
     margin-top: 70px;
     text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#play-button:hover {
+    transform: scale(1.1);
+}
+
+#play-button:focus {
+    outline:0;
+}
+
+#play-button:active {
+    transform: translateY(4px);
+}
+
+.play-again-button {
+    display: none;
+}
+
+/*-------------QUESTIONS SECTION------------*/
+
+#question-box {
+    text-align: center;
+}
+
+#question-bg {
+    width: 40%;
+    height: 40%;
 }
