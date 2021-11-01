@@ -59,10 +59,6 @@ body, html {
     transform: translateY(4px);
 }
 
-.play-again-button {
-    display: none;
-}
-
 #timer {
     width: fit-content;
     text-align: center;
@@ -84,8 +80,39 @@ body, html {
     text-align: center;
     background-color: #5f5e9a61;
     width: 500px;
+    height: 200px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#answer-box {
+    text-align: center;
+    background-color: #585796;
+    width: 700px;
     height: 250px;
 }
+
+tr {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+#a, #b, #c, #d {
+    position: absolute;
+    width: 10.6vw;
+    height: 8.7vw;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1%;
+    padding-left: 1%;
+    background-color: #ffffffaf;
+    border: 1px solid #ffffffaf;
+}
+
+
 
 #quotes {
     position: absolute;
