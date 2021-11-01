@@ -220,3 +220,10 @@ var movies = [
         letter: "a",
     },
 ]
+
+
+var correct = 0;
+var incorrect = 0;
+var unanswered = 0;
+var qCount = 0;
+var myTimer, letter, num, timeLeft, y;

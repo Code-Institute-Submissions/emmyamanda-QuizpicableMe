@@ -85,11 +85,39 @@ body, html {
     display: none;
 }
 
+#quotes {
+    position: absolute;
+}
+
+#number-count {
+    position: absolute;
+    transform: rotate(-90deg);
+    right: 8%;
+    bottom: 48%;
+    font-size: 2vw;
+}
+
+#results {
+    display: none;
+    font-size: 1.6vw;
+    font-weight: bold;
+    position: absolute;
+    top: 16%;
+    right: 1.5%;
+}
+
+#done {
+    position: absolute;
+    top: 34%;
+    right: 27%;
+}
+
 #answer-box {
     text-align: center;
     background-color: #585796;
     width: 700px;
     height: 250px;
+    display: none;
 }
 
 #a, #b, #c, #d {
@@ -107,10 +135,45 @@ table {
     margin-top: 20px;
 }
 
-#quotes {
-    position: absolute;
+#playAgain{
+    display: none;
+    justify-content: center;
 }
 
-#number-count {
+#correct {
+    float: left;
+    width: fit-content;
     position: absolute;
+    left: 22%;
+    top: 195%;
+    background-color: #0b920bd0;
+    color: white;
+    padding: 0.7%;
+    border-radius: 5px;
 }
+
+#incorrect {
+    float: left;
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    top: 195%;
+    background-color: #ff0000cb;
+    color: #ffffff;
+    padding: 0.7%;
+    border-radius: 5px;
+   
+}
+
+#unanswered {
+    float: left;
+    width: fit-content;
+    position: absolute;
+    top: 500%;
+    left: 40%;
+    background-color: #0000ffc2;
+    color: #ffffff;
+    padding: 0.7%;
+    border-radius: 5px;
+}
+
