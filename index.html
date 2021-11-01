@@ -19,35 +19,35 @@
             <div class="col-12">
                 <h1 id="title"><i class="fas fa-film" id="film-image"></i><span></i>Quizpicable Me<i class="fas fa-film" id="film-image"></i></span></h1>
                 <h3 id="title-undertext">Can you guess which movie the quote is from?</h3>
-                <h4 id="countdown"></h4> <!--ADD JAVASCRIPT-->
+                <h4 id="timer"></h4> <!--ADD JAVASCRIPT-->
             </div>
             <div class="col-12">
-                <button id="play-button" class="btn btn-click" aria-label="Enter Button">Play game!</button>
-                <button id="play-button" class="btn btn-click play-again-button" aria-label="Play Again Button">Play again!</button>
+                <button id="play" class="start" aria-label="Enter Button">Play game!</button>
+                <button id="playAgain" class="start" aria-label="Play Again Button">Play again!</button>
             </div>
         </div>
     </div>
-    <section class="question-part">
-        <div id="question-box" class="container-fluid">
-                <h2 id="quotes"></h2>
-                <h3 id="number-count"></h3>
-                <div class="result">
-                    <h2>Quiz Finished! Here's your results!</h2>
-                    <div id="correct">
-                        <h3>Correct Answers</h3>
-                        <h3 id="correct-num"></h3>
-                    </div>
-                    <div id="incorrect">
-                        <h3>Incorrect Answers</h3>
-                        <h3 id="incorrect-num"></h3>
-                    </div>
-                    <div id="unanswered">
-                        <h3>Unanswered Questions</h3>
-                        <h3 id="not-ans"></h3>
-                    </div>
-                </div>
+    
+    <div id="question-box" class="container-fluid">
+        <h2 id="quotes"></h2>
+        <h3 id="number-count"></h3>
+        <div class="result">
+            <h2>Quiz Finished! Here's your results!</h2>
+            <div id="correct">
+                <h3>Correct Answers</h3>
+                <h3 id="correct-num"></h3>
+            </div>
+            <div id="incorrect">
+                <h3>Incorrect Answers</h3>
+                <h3 id="incorrect-num"></h3>
+            </div>
+            <div id="unanswered">
+                <h3>Unanswered Questions</h3>
+                <h3 id="not-ans"></h3>
+            </div>
         </div>
-    </section>
+    </div>
+    
     
 </body>
 </html>
