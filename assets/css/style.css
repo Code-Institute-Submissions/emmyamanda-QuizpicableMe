@@ -65,13 +65,15 @@ body, html {
 
 /*-------------QUESTIONS SECTION------------*/
 
-#question-box {
-    text-align: center;
+.question-part {
+    height: 300px;
 }
 
-#question-bg {
-    width: 40%;
-    height: 40%;
+#question-box {
+    text-align: center;
+    background-color: #5f5e9a61;
+    width: 500px;
+    height: 250px;
 }
 
 #quotes {
