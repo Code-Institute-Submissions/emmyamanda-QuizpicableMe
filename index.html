@@ -19,26 +19,26 @@
     <div id="background"></div>
     <h1><i class="fas fa-film" id="film-image"></i> Quizpicable Me <i class="fas fa-film" id="film-image"></i></h1>
     <h2>Can you guess which movie the quote is from?</h2>
-    <button class="start" id ="play">Play game!</button>
-    <button class="start" id ="playAgain">Replay!</button>
-    <h4 id="timer"></h4>
+    <button class="playGame" id ="play">Play game!</button>
+    <button class="playGame" id ="playAgain">Replay!</button>
+    <h4 id="countDown"></h4>
     
-    <div id="question-box" class="container-fluid">
-        <h2 id="quotes"></h2>
-        <h3 id="number-count"></h3>
-        <div class="results">
-            <h2 id="done">Quiz Finished! Here's your results!</h2>
-            <div id="correct">
-                <h3>Correct Answers</h3>
-                <h3 id="correct-num"></h3>
+    <div class="questionBox">
+        <img id="question-bg" src="assets/images/film-reel.jpeg">
+        <h3 id="quotes"></h3>
+        <h3 id="numCount"></h3>
+        <div id="results">
+            <div id="right">
+                <h3>Right Answers</h3>
+                <h3 id="rightNum"></h3>
             </div>
-            <div id="incorrect">
-                <h3>Incorrect Answers</h3>
-                <h3 id="incorrect-num"></h3>
+            <div id="wrong">
+                <h3>Wrong Answers</h3>
+                <h3 id="wrongNum"></h3>
             </div>
             <div id="unanswered">
-                <h3>Unanswered Questions</h3>
-                <h3 id="not-ans"></h3>
+                    <h3>Unanswered</h3>
+                    <h3 id="unNum"></h3>
             </div>
         </div>
     </div>
