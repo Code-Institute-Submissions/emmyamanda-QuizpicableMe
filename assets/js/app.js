@@ -222,19 +222,65 @@ var movies = [
 ]
 
 //Variables 
-var correct = 0;
-var incorrect = 0;
+var right = 0;
+var wrong = 0;
 var unanswered = 0;
 var qCount = 0;
 var myTimer, letter, num, timeLeft, y;
 
-$(document).on('touchstart click', '.start', function(e){
+$(document).on(' touchstart click', '.playGame', function(e){
     e.stopPropagation(); 
     e.preventDefault();
     // randomizes the array of movies
     movies.sort(function() { return 0.5 - Math.random() });
     $(this).hide();
-    $('#question-box, #answer-box, #number-count, #timer, #quotes').show();
-    $('.results').hide();
+    $('.questionBox, .answerBox, #numCount, #countDown, #quotes').show();
+    $('#results').hide();
     currentQuestion(qCount);
-}); 
+    
+});
+
+function currentQuestion(count){
+    // adds question number to the side ot the ticket stub
+    $('#numCount').html("Q. No. " + (qCount+1) + " / 10")
+    $('.options').removeClass('rightAnswer wrongAnswer');
+
+    // adds the hov class that causes the answer options to hover
+    $('.options').addClass('hov');
+
+    y = true;
+
+    // displays the question if there are questions left to answer
+    if (count < (movies.length/2)){
+        timeLeft = 10;
+        $('#countDown').removeClass('rightHeader wrongHeader').css('color', '#000000');
+        $('#countDown').text("Time Remaining: " + timeLeft + ' seconds');
+        myTimer = setInterval(countdown, 1000);
+        $('#quotes').html(movies[count].question);
+        $('#a').html(movies[count].answers.a);
+        $('#b').html(movies[count].answers.b);
+        $('#c').html(movies[count].answers.c);
+        $('#d').html(movies[count].answers.d);
+        letter = movies[count].letter;
+
+    }
+    //after all questions have been shown then show the Trivia Game Complete screen
+    else{
+        $('#numCount, #countDown, #quotes, .answerBox').hide();
+        $('#results, #playAgain').show();
+        $("#playAgain").css('display', 'flex');
+        $('#rightNum').html(right);
+        $('#wrongNum').html(wrong);
+        $('#unNum').html(unanswered);
+        // randomizes the array of movies
+        movies.sort(function() { return 0.5 - Math.random() });
+
+
+        qCount = 0;
+        unanswered = 0;
+        right = 0;
+        wrong = 0;
+
+    }
+
+}

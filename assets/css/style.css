@@ -190,74 +190,43 @@ tr{
     right: 1.5%;
 }
 
-#done {
-    position: absolute;
-    top: 34%;
-    right: 27%;
-}
-
-#answer-box {
-    text-align: center;
-    background-color: #585796;
-    width: 700px;
-    height: 250px;
-    display: none;
-}
-
-#a, #b, #c, #d {
-    
-    background-color: #ffffffaf;
-    border: 1px solid #ffffffaf;
-}
-
-#answer-container {
-    margin-top: 10px;
-}
-
-table {
-    height: 200px;
-    margin-top: 20px;
-}
-
 #playAgain{
     display: none;
     justify-content: center;
 }
 
-#correct {
+#right{
     float: left;
-    width: fit-content;
+    width: 12.2vw;
+    height: 13.7vw;
     position: absolute;
-    left: 22%;
-    top: 195%;
+    left: 13%;
     background-color: #0b920bd0;
     color: white;
     padding: 0.7%;
     border-radius: 5px;
 }
 
-#incorrect {
+#wrong{
     float: left;
-    width: fit-content;
+    width: 12.3vw;
+    height: 13.7vw;
     position: absolute;
-    left: 50%;
-    top: 195%;
+    left: 64%;
     background-color: #ff0000cb;
     color: #ffffff;
     padding: 0.7%;
     border-radius: 5px;
-   
 }
 
-#unanswered {
+#unanswered{
     float: left;
-    width: fit-content;
+    width: 12.2vw;
+    height: 13.7vw;
     position: absolute;
-    top: 500%;
-    left: 40%;
+    left: 39%;
     background-color: #0000ffc2;
     color: #ffffff;
     padding: 0.7%;
     border-radius: 5px;
 }
-
