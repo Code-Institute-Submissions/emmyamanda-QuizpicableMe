@@ -106,6 +106,62 @@ div{
     font-size: 1.5vw;
 }
 
+tr{
+    width:100%;
+    height: 100%;
+    display: inline-block;
+}
+
+#a, #b, #c, #d{
+    position: absolute;
+    width: 10.6vw;
+    height: 8.7vw;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1%;
+    padding-left: 1%;
+    background-color: #ffffffaf;
+    border: 1px solid #ffffffaf;
+}
+
+#a{
+    top: 18%;
+    left: 0.5%;
+}
+
+#b{
+    top: 18%;
+    left: 25.3%;
+    
+}
+#c{
+    top: 18%;
+    right: 26.4%;
+
+}
+#d{
+    top: 18%;
+    right: 1.6%;
+}
+
+.hov:hover{
+    background-color: #20150e !important;
+    border: 1px solid #ff6600 !important;
+}
+
+.rightAnswer{
+    background-color:#06d306b7 !important;
+    border-color: #184418c0 !important;
+}
+
+.rightHeader{
+    color: #1b1313 !important;
+    background-color: #06d306b7;
+    border-radius: 10px;
+}
+
 #results {
     display: none;
     font-size: 1.6vw;
