@@ -72,9 +72,6 @@ body, html {
 
 /*-------------QUESTIONS SECTION------------*/
 
-.question-part {
-    height: 300px;
-}
 
 #question-box {
     text-align: center;
@@ -87,6 +84,11 @@ body, html {
 
 #quotes {
     position: absolute;
+    transform: translate(-50%, -50%);
+    word-break: break-all;
+    word-wrap: break-word;
+    font-size: 4.2vw;
+    line-height: 5vw;
 }
 
 #number-count {
