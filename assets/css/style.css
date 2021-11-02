@@ -162,10 +162,29 @@ tr{
     border-radius: 10px;
 }
 
+.wrongAnswer{
+    background-color:#f50404e5 !important;
+    border-color: #811919 !important;
+}
+
+.wrongHeader{
+    color: #1b1313 !important;
+    background-color: #e0272766;
+    border-radius: 10px;
+}
+
+#numCount{
+    position: absolute;
+    transform: rotate(-90deg);
+    right: 74%;
+    bottom: 36%;
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+
 #results {
     display: none;
-    font-size: 1.6vw;
-    font-weight: bold;
+    font-size: 1.4vw;
     position: absolute;
     top: 16%;
     right: 1.5%;
