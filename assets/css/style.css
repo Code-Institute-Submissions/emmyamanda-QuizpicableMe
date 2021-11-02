@@ -147,7 +147,7 @@ tr{
 }
 
 .hov:hover{
-    background-color: #20150e !important;
+    background-color: #d4956e86 !important;
     border: 1px solid #ff6600 !important;
 }
 
@@ -157,7 +157,7 @@ tr{
 }
 
 .rightHeader{
-    color: #1b1313 !important;
+    color: #8f7979 !important;
     background-color: #06d306b7;
     border-radius: 10px;
 }
@@ -168,7 +168,7 @@ tr{
 }
 
 .wrongHeader{
-    color: #1b1313 !important;
+    color: #5a3b3b !important;
     background-color: #e0272766;
     border-radius: 10px;
 }

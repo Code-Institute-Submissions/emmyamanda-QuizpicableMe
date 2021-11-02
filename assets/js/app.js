@@ -231,7 +231,7 @@ var myTimer, letter, num, timeLeft, y;
 $(document).on(' touchstart click', '.playGame', function(e){
     e.stopPropagation(); 
     e.preventDefault();
-    // randomizes the array of movies
+    // Movie quotes questions randomizes
     movies.sort(function() { return 0.5 - Math.random() });
     $(this).hide();
     $('.questionBox, .answerBox, #numCount, #countDown, #quotes').show();
@@ -241,16 +241,14 @@ $(document).on(' touchstart click', '.playGame', function(e){
 });
 
 function currentQuestion(count){
-    // adds question number to the side ot the ticket stub
     $('#numCount').html("Q. No. " + (qCount+1) + " / 10")
     $('.options').removeClass('rightAnswer wrongAnswer');
 
-    // adds the hov class that causes the answer options to hover
     $('.options').addClass('hov');
 
     y = true;
 
-    // displays the question if there are questions left to answer
+    
     if (count < (movies.length/2)){
         timeLeft = 10;
         $('#countDown').removeClass('rightHeader wrongHeader').css('color', '#000000');
@@ -264,7 +262,7 @@ function currentQuestion(count){
         letter = movies[count].letter;
 
     }
-    //after all questions have been shown then show the Trivia Game Complete screen
+    
     else{
         $('#numCount, #countDown, #quotes, .answerBox').hide();
         $('#results, #playAgain').show();
@@ -275,12 +273,74 @@ function currentQuestion(count){
         // randomizes the array of movies
         movies.sort(function() { return 0.5 - Math.random() });
 
-
         qCount = 0;
         unanswered = 0;
         right = 0;
         wrong = 0;
+    }
+}
+
+
+function countdown() {
+    if (timeLeft == 1) {
+        clearTimeout(myTimer);
+        $('#countDown').text("Time's Up!");
+        $('.options').removeClass('hov');
+        noAnswerSelected();
+
+    } else {
+        
+        timeLeft--;
+        $('#countDown').text("Time Remaining: " + timeLeft + ' seconds');
+        
+        if(timeLeft <= 5){
+            $('#countDown').css('color', '#e30404'); 
+        }
 
     }
-
 }
+
+
+function noAnswerSelected(){ 
+    y = false;
+    $("#"+letter).addClass('rightAnswer');
+    unanswered ++;
+    qCount++;
+    setTimeout(function(){
+        currentQuestion(qCount)
+    }, 4000);
+}
+
+
+$(document).on(' touchstart click', '.options', function (e){
+    e.stopPropagation(); 
+    e.preventDefault();
+    $('.options').removeClass('hov');
+    clearTimeout(myTimer);
+
+
+    if(y){
+
+        if($(this).attr('id') == letter){
+            y = false;
+            $('#countDown').text("That's Right!").addClass('rightHeader');
+            $("#"+letter).addClass('rightAnswer');
+            right ++;
+            qCount++;
+            setTimeout(function(){
+                currentQuestion(qCount)
+            }, 4000);
+        }
+        else{
+            y = false;
+            $('#countDown').text("Nope. That's Wrong.").addClass('wrongHeader');
+            $("#"+letter).addClass('rightAnswer');
+            $(this).addClass('wrongAnswer');
+            wrong ++;
+            qCount++
+            setTimeout(function(){
+                currentQuestion(qCount)
+            }, 4000);
+        }
+    } 
+});
