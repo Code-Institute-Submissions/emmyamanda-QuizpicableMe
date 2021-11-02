@@ -37,25 +37,36 @@ div{
      text-decoration-line: underline;
  }
 
-.start {
-    color: white;
-    background-color: rgb(34, 55, 102);
-    font-size: 30px;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-top: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+ h2{
+    color: rgb(26 61 105);
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 1.5vw;
 }
 
-.start:hover {
+.playGame {
+    color: rgb(238, 238, 238);
+    background-color: rgb(34, 55, 102);
+    font-size: 2.5vw;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 11vw;
+    text-transform: uppercase;
+    letter-spacing: 0.15vw;
+    padding: 0.9vw;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.playGame:hover {
     transform: scale(1.1);
 }
 
-.start:focus {
+.playGame:focus {
     outline:0;
 }
 
-.start:active {
+.playGame:active {
     transform: translateY(4px);
 }
 
