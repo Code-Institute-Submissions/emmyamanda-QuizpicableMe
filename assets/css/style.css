@@ -70,28 +70,24 @@ div{
     transform: translateY(4px);
 }
 
-#timer {
+#countDown {
     width: fit-content;
-    text-align: center;
     font-size: 2.5vw;
-    font-weight: bold;
     margin: 0 auto;
     margin-bottom: 1%;
-    margin-top: 1%;
-    padding: 0 1% 0 1%;
 }
 
 /*-------------QUESTIONS SECTION------------*/
 
 
-#question-box {
-    text-align: center;
-    background-color: #5f5e9a61;
-    width: 500px;
-    height: 200px;
-    margin-bottom: 20px;
+.questionBox{
     display: none;
+    position: relative;
+    text-align: center;
 }
+#question-bg{
+    width: 80%;
+    height: 80%;
 
 #quotes {
     position: absolute;
