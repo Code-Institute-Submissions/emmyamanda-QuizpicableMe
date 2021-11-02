@@ -23,25 +23,19 @@ body, html {
     z-index: -5;
 }
 
-#title {
-    font-family: 'Righteous', sans-serif;
-    color: rgba(88, 106, 128, 0.945);
-    font-size: 100px;
-    text-transform: uppercase;
-    margin-top: 10px;
-}
-
-#title span {
-    background-color: rgba(250, 247, 246, 0.233);
-}
-
-#film-image {
-    color: rgba(255, 255, 255, 0.808);
-}
-
-#title-undertext {
-    font-family: 'Righteous', sans-serif;
-}
+div{
+    margin: 0 auto;
+    width: 50vw;
+    height: fit-content;
+ }
+ h1{
+     color: rgb(26 61 105);
+     text-align: center;
+     font-size: 4vw;
+     margin-top: 2vw;
+     text-transform: uppercase;
+     text-decoration-line: underline;
+ }
 
 .start {
     color: white;
