@@ -8,6 +8,7 @@ body, html {
     overflow: hidden;
 }
 
+/*-----------------Background---------------*/
 .background {
     background-image: url("../images/background-pic.jpg");
     background-position: center;
@@ -23,12 +24,14 @@ body, html {
     z-index: -5;
 }
 
-div{
+div {
     margin: 0 auto;
     width: 50vw;
     height: fit-content;
  }
- h1{
+
+ /*-----------------Header text---------------*/
+ h1 {
      color: rgb(26 61 105);
      text-align: center;
      font-size: 4vw;
@@ -37,13 +40,14 @@ div{
      text-decoration-line: underline;
  }
 
- h2{
+ h2 {
     color: rgb(26 61 105);
     text-align: center;
     font-size: 3vw;
     margin-top: 1.5vw;
 }
 
+/*-----------------Play button---------------*/
 .playGame {
     color: rgb(238, 238, 238);
     background-color: rgb(34, 55, 102);
@@ -70,6 +74,7 @@ div{
     transform: translateY(4px);
 }
 
+/*-----------------Count down text---------------*/
 #countDown {
     width: fit-content;
     font-size: 2.5vw;
@@ -79,18 +84,18 @@ div{
 
 /*-------------QUESTIONS SECTION------------*/
 
-
-.questionBox{
+.questionBox {
     display: none;
     position: relative;
     text-align: center;
 }
-#question-bg{
+#question-bg {
     width: 80%;
     height: 80%;
 }
 
-#quotes{
+/*-----------------Question quotes---------------*/
+#quotes {
     position: absolute;
     top: 38%;
     left: 50%;
@@ -99,20 +104,22 @@ div{
     line-height: 4vw;
 }
 
-.answerBox{
+/*-----------------ANSWER OPTION SECTION---------------*/
+.answerBox {
     display: none;
     position: relative;
     text-align: center;
     font-size: 1.5vw;
 }
 
-tr{
+tr {
     width:100%;
     height: 100%;
     display: inline-block;
 }
 
-#a, #b, #c, #d{
+/*-----------------Option boxes---------------*/
+#a, #b, #c, #d {
     position: absolute;
     width: 10.6vw;
     height: 8.7vw;
@@ -126,54 +133,58 @@ tr{
     border: 1px solid #ffffffaf;
 }
 
-#a{
+#a {
     top: 18%;
     left: 0.5%;
 }
 
-#b{
+#b {
     top: 18%;
-    left: 25.3%;
-    
+    left: 25.3%; 
 }
-#c{
+
+#c {
     top: 18%;
     right: 26.4%;
-
 }
-#d{
+
+#d {
     top: 18%;
     right: 1.6%;
 }
 
-.hov:hover{
+/*-----------------When mouse goes over answer option boxes---------------*/
+.hov:hover { 
     background-color: #d4956e86 !important;
     border: 1px solid #ff6600 !important;
 }
 
-.rightAnswer{
+/*-----------------When user choose right option---------------*/
+.rightAnswer {
     background-color:#06d306b7 !important;
     border-color: #184418c0 !important;
 }
 
-.rightHeader{
+.rightHeader {
     color: #8f7979 !important;
     background-color: #06d306b7;
     border-radius: 10px;
 }
 
-.wrongAnswer{
+/*-----------------When user choose wrong option---------------*/
+.wrongAnswer {
     background-color:#f50404e5 !important;
     border-color: #811919 !important;
 }
 
-.wrongHeader{
+.wrongHeader {
     color: #5a3b3b !important;
     background-color: #e0272766;
     border-radius: 10px;
 }
 
-#numCount{
+/*-----------------Countdown---------------*/
+#numCount {
     position: absolute;
     transform: rotate(-90deg);
     right: 74%;
@@ -190,12 +201,14 @@ tr{
     right: 1.5%;
 }
 
-#playAgain{
+/*-----------------When game is finished, play again button---------------*/
+#playAgain {
     display: none;
     justify-content: center;
 }
 
-#right{
+/*-----------------How many right user have box---------------*/
+#right {
     float: left;
     width: 12.2vw;
     height: 13.7vw;
@@ -207,7 +220,8 @@ tr{
     border-radius: 5px;
 }
 
-#wrong{
+/*-----------------How many wrong user have box---------------*/
+#wrong {
     float: left;
     width: 12.3vw;
     height: 13.7vw;
@@ -219,7 +233,8 @@ tr{
     border-radius: 5px;
 }
 
-#unanswered{
+/*-----------------How many unaswered questions user have box---------------*/
+#unanswered {
     float: left;
     width: 12.2vw;
     height: 13.7vw;
