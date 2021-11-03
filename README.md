@@ -108,3 +108,8 @@ Typography
 ! [index.html test](assets/testing-files/index-page-test.png)
 ! [index.html test](assets/testing-files/index-page-test2.png)
 
+
+### style.css 
+- When testing style.css no problem showed up
+
+! [index.html test](assets/testing-files/style.css-page-test.png)
