@@ -40,5 +40,49 @@ The developer is looking for:
 5. Be able to choose what to do at the end of the game, if I would like to replay. 
 6. Be able to see how many correct and incorrect answers I got at the end of the game. 
 
+***
+
 ### Development Planes 
+
+Strategy
+-
+
+Roles 
+- New players 
+- Current players 
+
+Demographic
+- Movie lovers 
+- Ages 12 years and up
+- People who loves quizzes
+
+Scope
+-
+
+- **Content Requirements**
+     - The user will be looking for:
+          - Engaging content
+          - Easy navigation
+          - Easy play interface
+- **Functionality Requirements**
+     - The user will be able to:
+          - Navigate easily
+          - Play with ease
+          - See end score
+
+
+Structure
+-
+
+The site was easily structured by using one page only application of how the user could easily navigate through the site. 
+
+See result:
+
+![Structure Map](assets/readme-files/Structure-map.png)
+
+
+Skeleton
+-
+
+
 
