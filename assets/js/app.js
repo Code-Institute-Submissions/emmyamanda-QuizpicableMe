@@ -1,3 +1,4 @@
+// Questions & answers used for quiz
 var movies = [
     {
         id: 0,
@@ -228,6 +229,7 @@ var unanswered = 0;
 var qCount = 0;
 var myTimer, letter, num, timeLeft, y;
 
+// On click Play Game! quiz starts
 $(document).on(' touchstart click', '.playGame', function(e){
     e.stopPropagation(); 
     e.preventDefault();
@@ -241,6 +243,7 @@ $(document).on(' touchstart click', '.playGame', function(e){
 });
 
 function currentQuestion(count){
+    // Add the question number you are on to the side on questionbox
     $('#numCount').html("Q. No. " + (qCount+1) + " / 10")
     $('.options').removeClass('rightAnswer wrongAnswer');
 
@@ -248,7 +251,7 @@ function currentQuestion(count){
 
     y = true;
 
-    
+    // Shows if there is any questions left to answer
     if (count < (movies.length/2)){
         timeLeft = 10;
         $('#countDown').removeClass('rightHeader wrongHeader').css('color', '#000000');
@@ -263,6 +266,7 @@ function currentQuestion(count){
 
     }
     
+    // Showing the quiz completed screen 
     else{
         $('#numCount, #countDown, #quotes, .answerBox').hide();
         $('#results, #playAgain').show();
@@ -280,7 +284,7 @@ function currentQuestion(count){
     }
 }
 
-
+// Countdown that shows remaining time left or if time is up
 function countdown() {
     if (timeLeft == 1) {
         clearTimeout(myTimer);
@@ -300,7 +304,7 @@ function countdown() {
     }
 }
 
-
+// When no option is selected by the user
 function noAnswerSelected(){ 
     y = false;
     $("#"+letter).addClass('rightAnswer');
@@ -311,7 +315,7 @@ function noAnswerSelected(){
     }, 4000);
 }
 
-
+// Lets the user know if they choosed the right or wrong option and clears the timer
 $(document).on(' touchstart click', '.options', function (e){
     e.stopPropagation(); 
     e.preventDefault();
@@ -320,10 +324,10 @@ $(document).on(' touchstart click', '.options', function (e){
 
 
     if(y){
-
+// If option is right - game tells user
         if($(this).attr('id') == letter){
             y = false;
-            $('#countDown').text("That's Right!").addClass('rightHeader');
+            $('#countDown').text("You are right!").addClass('rightHeader');
             $("#"+letter).addClass('rightAnswer');
             right ++;
             qCount++;
@@ -331,9 +335,10 @@ $(document).on(' touchstart click', '.options', function (e){
                 currentQuestion(qCount)
             }, 4000);
         }
+// If option is wrong - game tells user        
         else{
             y = false;
-            $('#countDown').text("Nope. That's Wrong.").addClass('wrongHeader');
+            $('#countDown').text("Sorry. That's Wrong.").addClass('wrongHeader');
             $("#"+letter).addClass('rightAnswer');
             $(this).addClass('wrongAnswer');
             wrong ++;
