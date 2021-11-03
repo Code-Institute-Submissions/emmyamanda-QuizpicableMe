@@ -1,9 +1,7 @@
 
 # QuizpicableMe
 
-## Content
-
-
+# Content
 
 
 ## Introduction
@@ -81,8 +79,26 @@ See result:
 ![Structure Map](assets/readme-files/Structure-map.png)
 
 
-Skeleton
--
+## Surface
+
+Colour Scheme
+- The colour scheme chosen was blue bright colours
+
+Typography
+- Primary font chosen is Righteous 
+- Secondary font chosen is Roboto Condensed
+
+## Features
+
+### Design Features & Excisting Features
+- Main header to clearly state what the game is named 
+- Play game button to indicate where to press when user wants to start the game
+- Question box where movie quotes features
+- Answer box with four options for user to choose between
+- Question count for user to be able to see how many questions the have done and have left
+- Countdown to see how long user has left on each question
+- Result box to see how many correct, incorrect and unaswered questions they got
+- Play again button if user would like to replay
 
 
 
