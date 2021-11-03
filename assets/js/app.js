@@ -1,3 +1,4 @@
+// The foundation of the game play function was sourced and edited from https://avakrishn.github.io/Trivia-Game/
 // Questions & answers used for quiz
 var movies = [
     {
