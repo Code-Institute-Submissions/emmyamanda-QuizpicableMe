@@ -105,11 +105,15 @@ Typography
 ### Index.html
 - When testing index.html a few problems came up but all accounted for as there is a repeated fontawesome icon that's supposed to be twice. And a few empty headers that has been given id instead to work with JavaScript
 
-! [index.html test](assets/testing-files/index-page-test.png)
-! [index.html test](assets/testing-files/index-page-test2.png)
+![index.html test](assets/testing-files/index-page-test.png)
+![index.html test](assets/testing-files/index-page-test2.png)
 
 
 ### style.css 
 - When testing style.css no problem showed up
 
-! [index.html test](assets/testing-files/style.css-page-test.png)
+![index.html test](assets/testing-files/style.css-test.png)
+
+## Credits
+- The foundation of my webpage was sourced and edited from https://avakrishn.github.io/Trivia-Game/
+- Credit is give both in html and JavaScript as the foundation of QuizpicableMe web application
