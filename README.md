@@ -100,5 +100,11 @@ Typography
 - Result box to see how many correct, incorrect and unaswered questions they got
 - Play again button if user would like to replay
 
+## Testing pages
 
+### Index.html
+- When testing index.html a few problems came up but all accounted for as there is a repeated fontawesome icon that's supposed to be twice. And a few empty headers that has been given id instead to work with JavaScript
+
+! [index.html test](assets/testing-files/index-page-test.png)
+! [index.html test](assets/testing-files/index-page-test2.png)
 
