@@ -33,3 +33,12 @@ The developer is looking for:
 ### User Stories
 **As a player - I want to:**
 
+1. Easily navigate through the game application. 
+2. Keep track on how many questions I have answered. 
+3. Easily see how much time I have left on each question. 
+4. Get visual feedback on my answers, to see if I was correct. 
+5. Be able to choose what to do at the end of the game, if I would like to replay. 
+6. Be able to see how many correct and incorrect answers I got at the end of the game. 
+
+### Development Planes 
+
